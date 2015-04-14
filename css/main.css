@@ -1,0 +1,516 @@
+﻿@charset "UTF-8";
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: SHIELD - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * Date: 02-11-2013
+ * URL: http://blacktie.co/
+ */
+/*
+ * Author: hrontan
+ * URL: http://twitter.com/hrontan
+ * Date: 09-11-2014
+ */
+
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Noto Sans Light';
+    src: url('../fonts/NotoSansCJKjp-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/NotoSansCJKjp-Light.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/NotoSansCJKjp-Light.otf') format('opentype'); /* Safari, Android, iOS */
+}
+
+
+html, button, input, select, textarea {
+    color: #222;
+}
+
+
+
+
+.add-indent {
+    text-indent: 20px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans Light', sans-serif;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.row {
+    margin-right: 0px;
+    margin-left: -15px;
+}
+
+
+.modal-footer {
+    background: #2b2b2b;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #dadada;
+}
+
+.navbar-toggle {
+    border-color: transparent;
+    border: 0px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #16a085;
+    color: white;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #FFF;
+}
+
+.navbar-nav > li > a {
+    line-height: 1.25;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    margin: 0 0 0 0;
+    display: inline;
+}
+
+hr {
+    position: relative;
+    border: none;
+}
+
+    hr:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 50%;
+        height: 2px;
+        background: #ccc;
+    }
+
+a img {
+    background: white;
+}
+
+.odd a img {
+    background: #f5f5f5;
+}
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    color: #333;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.paragraph-lead {
+    font-size: 20px;
+    color: #3498db;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 300;
+}
+
+pre {
+    background: #ebebeb;
+    border: none;
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    line-height: 28px;
+}
+
+small {
+    font-size: 12px;
+}
+
+blockquote, blockquote p {
+    line-height: 45px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 0 40px -30px;
+    padding-left: 30px;
+    border-left: none;
+}
+
+    blockquote cite {
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+        font-size: 12px;
+        font-style: italic;
+        color: #333;
+        font-weight: 300;
+    }
+
+        blockquote cite:before {
+            content: "-- ";
+        }
+/* Images */
+.overflow-image {
+    margin-top: -65px;
+}
+/* Links */
+a {
+    color: #3498db;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+    a:hover, a:focus {
+        color: #c0392b;
+        text-decoration: none;
+        outline: 0;
+    }
+
+    a:before, a:after {
+        -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+    background: url(../img/header_bg.jpg) no-repeat center top;
+    margin-top: -2em;
+    padding-top: 120px;
+    text-align: center;
+    background-position: center center;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    #headerwrap div {
+        display: inline-block;
+    }
+
+    #headerwrap p {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 1;
+        letter-spacing: 3px;
+        margin-left: 15px;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+        #headerwrap p .first-letter {
+            color: #6CF;
+            width: 1em;
+            display: inline-block;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+#footerwrap {
+    background: #2b2b2b;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+    #footerwrap h4 {
+        color: white;
+    }
+/* ==========================================================================
+   Box Sections
+   ========================================================================== */
+
+.white h2 {
+    padding-top: 35px;
+}
+
+.white p {
+    padding-top: 25px;
+}
+
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 350px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 45px;
+    background-position: center center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: relative;
+    text-align: center;
+}
+
+.textdivider h2 {
+    padding-top: 70px;
+    color: white;
+    font-size: 40px;
+}
+
+.textdivider p {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.textdivider small {
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* ==========================================================================
+   Member Section
+   ========================================================================== */
+
+
+p.member-content {
+    font-size: 14.5px;
+    padding-top: 4px;
+    padding-bottom: 30px;
+}
+
+.member-name {
+    font-size: 14.5px;
+}
+
+    .member-name b {
+        font-size: 21px;
+        font-weight: normal;
+    }
+
+/* ==========================================================================
+   Image Mask
+   ========================================================================== */
+
+.grid {
+    margin-bottom: 30px;
+}
+
+    .grid figure {
+        margin: 0;
+        position: relative;
+    }
+
+        .grid figure img {
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+
+    .grid figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 20px 20px 14px;
+        color: #fff;
+        background-color: #5E5E5E;
+    }
+
+        .grid figcaption h5 {
+            margin: 0;
+            padding-top: 0px;
+            padding-bottom: 5px;
+            color: #fff;
+            text-align: left;
+            letter-spacing: 2px;
+        }
+
+        .grid figcaption a {
+            text-align: left;
+            padding: 5px 10px;
+            margin-left: 15px;
+            display: inline-block;
+            background: #FFF;
+            color: #000;
+            font-size: 13px;
+        }
+/* Caption Style */
+.mask figure {
+    overflow: hidden;
+}
+
+    .mask figure img {
+        -webkit-transition: -webkit-transform 0.4s;
+        -moz-transition: -moz-transform 0.4s;
+        transition: transform 0.4s;
+    }
+
+    .mask figure:hover img, .mask figure.cs-hover img {
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+.mask figcaption {
+    height: 50px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.mask figure:hover figcaption, .mask figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.mask figcaption a {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px) {
+    body .header {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .header {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:769px) {
+    #headerwrap p {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width:369px) {
+    #headerwrap p {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .navbar-brand {
+        padding-top: 29px;
+        padding-bottom: 20px;
+        line-height: 0;
+    }
+
+    .nav li a {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 0;
+    }
+
+    .nav li {
+        line-height: 0;
+    }
+}

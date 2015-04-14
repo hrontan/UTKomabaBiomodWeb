@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+
+Sitemap:http://biomod.azuresites.net/sitemap.xml
