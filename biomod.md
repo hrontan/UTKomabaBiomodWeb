@@ -14,8 +14,6 @@ DNAやRNA、タンパク質などの生体分子を使ってつくりあげた�
 * [2013年:UT-Komaba "DNA screw"](http://openwetware.org/wiki/Biomod/2013/Komaba)
 * [2014年:UT-Komaba "DNA mag-beads"](http://openwetware.org/wiki/Biomod/2014)
 
-BIOMODで要求されるのは生物や分子の知識だけではありません。
-
 ### ガイダンス
 2015年度も引き続き分子ロボティクスは開講します。初回ガイダンスは4/17(金)にKOMCEEのK301で行いますので
 興味のある方は是非いらしてください。また、興味はあるがガイダンスに参加できないという方は biomod.komaba@gmail.com
