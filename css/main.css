@@ -264,11 +264,11 @@ a {
         color: #ffffff;
         font-size: 40px;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         line-height: 1;
         letter-spacing: 3px;
         margin-left: 15px;
-        text-shadow: 1px 1px 1px #000;
+        text-shadow: 1px 3px 1px #000;
     }
 
         #headerwrap p .first-letter {
