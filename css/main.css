@@ -382,6 +382,7 @@ p.member-content {
 
         .grid figure img {
             width: 100%;
+			height: 120px;
             display: block;
             position: relative;
         }
@@ -425,10 +426,10 @@ p.member-content {
     }
 
     .mask figure:hover img, .mask figure.cs-hover img {
-        -webkit-transform: translateY(-30px);
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        transform: translateY(-30px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
 
 .mask figcaption {
@@ -436,25 +437,6 @@ p.member-content {
     width: 100%;
     top: auto;
     bottom: 0;
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-    transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.mask figure:hover figcaption, .mask figure.cs-hover figcaption {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-    transition: transform 0.4s, opacity 0.1s;
 }
 
 .mask figcaption a {
