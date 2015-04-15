@@ -14,6 +14,9 @@
  * Date: 09-11-2014
  */
 
+.modal-content{
+	border-radius:4px;
+}
 
 body {
     font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
@@ -235,7 +238,12 @@ a {
         -o-transition: color 0.1s ease-in, background 0.1s ease-in;
         transition: color 0.1s ease-in, background 0.1s ease-in;
     }
-/* ==========================================================================
+
+	.btn{
+		border-radius:2px;
+	}
+
+	/* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
@@ -401,6 +409,7 @@ p.member-content {
             margin: 0;
             padding-top: 0px;
             padding-bottom: 5px;
+			padding-right: 40px;
             color: #fff;
             text-align: left;
             letter-spacing: 2px;
