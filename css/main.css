@@ -377,6 +377,7 @@ p.member-content {
 
     .grid figure {
         margin: 0;
+		height:165px;
         position: relative;
     }
 
